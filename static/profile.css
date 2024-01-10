@@ -1,0 +1,356 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .clearfix {
+    display: inline-block;
+  }
+  
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  header, nav, section, article, aside, footer, hgroup {
+    display: block;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #1e1e1e;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  a {
+      color: #CCC;
+    text-decoration: none !important;
+  }
+  a:hover {
+      color: #F99;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  ul {
+    margin-bottom: 0px;
+  }
+  
+  p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+  }
+  
+  img {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Pre-loader Style
+  --------------------------------------------- 
+  */
+  
+  .js-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.99);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+  }
+  
+  .js-preloader.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  @-webkit-keyframes dot {
+    50% {
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
+    }
+  }
+  
+  @keyframes dot {
+    50% {
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
+    }
+  }
+  
+  @-webkit-keyframes dots {
+    50% {
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
+    }
+  }
+  
+  @keyframes dots {
+    50% {
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
+    }
+  }
+  
+  .preloader-inner {
+    position: relative;
+    width: 142px;
+    height: 40px;
+    background: transparent;
+  }
+  
+  .preloader-inner .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    background: #e75e8d;
+    border-radius: 50%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation: dot 2.8s infinite;
+    animation: dot 2.8s infinite;
+  }
+  
+  .preloader-inner .dots {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    -webkit-animation: dots 2.8s infinite;
+    animation: dots 2.8s infinite;
+  }
+  
+  .preloader-inner .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    background: #e75e8d;
+    border-radius: 50%;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Banner Style
+  --------------------------------------------- 
+  */
+  
+  .main-banner {
+    background-image: url(../images/banner-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 380px;
+    border-radius: 23px;
+    padding: 80px 60px;
+  }
+  
+  .main-banner h6 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  
+  .main-banner h4 {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+  .main-banner h4 em {
+    font-style: normal;
+    color: #ec6090;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Most Popular Style
+  --------------------------------------------- 
+  */
+  
+  .most-popular {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #1f2122;
+    border-radius: 23px;
+  }
+  
+  .most-popular .item {
+    background-color: #27292a;
+    padding: 30px 15px;
+    border-radius: 23px;
+    margin-bottom: 30px;
+  }
+  
+  .most-popular .item .item {
+    padding: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    margin-bottom: 0px;
+  }
+  
+  .most-popular .item img {
+    border-radius: 23px;
+  }
+  
+  .most-popular .item h4 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+  
+  .most-popular .item span {
+    color: #666;
+    display: block;
+    margin-top: 7px;
+    font-weight: 400;
+  }
+  
+  .most-popular .item ul {
+    float: right;
+    margin-top: 20px;
+  }
+  
+  .most-popular .item ul li {
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .most-popular .item ul li:first-child i {
+    color: yellow;
+  }
+  
+  .most-popular .item ul li:last-child i {
+    color: #ec6090;
+  }
+  
+  .most-popular .main-button {
+    text-align: center;
+    margin-bottom: -53px;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Gaming Library Style
+  --------------------------------------------- 
+  */
+  
+  .gaming-library {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #1f2122;
+    border-radius: 23px;
+  }
+  
+  .gaming-library .item {
+    border-bottom: 1px solid #27292a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .gaming-library .last-item {
+    margin-bottom: 30px;
+  }
+  
+  .profile-library .last-item {
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .gaming-library .item ul li {
+    margin-top: 15px;
+  }
+  
+  .gaming-library .item ul li img {
+    margin-top: -30px;
+  }
+  
+  .gaming-library .item ul li {
+    display: inline-block;
+    width: 17%;
+  }
+  
+  .gaming-library .item ul li:first-child {
+    width: 110px;
+  }
+  
+  .gaming-library .item ul li:last-child {
+    width: 15%;
+    text-align: right;
+  }
+  
+  .gaming-library .item ul li h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .gaming-library .item ul li span {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .gaming-library .main-button {
+    text-align: center;
+    margin-bottom: -53px;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Footer Style
+  --------------------------------------------- 
+  */
+  
+  footer p {
+    text-align: center;
+    padding: 30px 0px;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  footer p a {
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  footer p a:hover {
+    color: #ec6090;
+  }

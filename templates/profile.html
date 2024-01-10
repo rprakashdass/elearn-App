@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>{{session["username"]}}</title>
+</head>
+<body class="bg-dark text-white">
+  <hi>{{session["username"]}}</hi>
+  <div class="">
+    <div class="row row-cols-lg-2">
+      <div class="col bg-black">
+        <ul class="list-group">
+          <p class="alert alert-danger mt-5" alt="set a profile">set a profile</p>
+          <li class="ms-3 mb-2 mt-1 list-group-item">Your name is {{session["username"]}}</li>
+          <li class="ms-3 list-group-item">Event2</li>
+        </ul>
+      </div>
+      <div class="col bg-info">
+        <ul class="">
+          <li>Event1</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

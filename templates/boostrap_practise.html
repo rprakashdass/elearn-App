@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Boostrap Practise Codes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .custom-grid{
+            padding: 67px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header with nav pills-->
+    <header class=" align-items-lg-center bg-success">
+        <ul class="nav nav-pills breadcrumb" >
+            <li class="active p-3">Home</li>
+            <li class="p-3">Nav</li>
+            <li class="p-3">Practise Title</li>
+            <li class="p-3">Feedbacks</li>
+            <li class="p-3">
+                New<span class="badge ms-1 bg-dark-subtle">45</span>
+            </li>
+        </ul>
+    </header>
+
+    <div class="alert alert-warning text-center alert-dismissible">
+        Currently the Page is Under Developement Give Your Valid feedback here!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Grid System -->
+    <h2>Grid System</h2>
+    <div class="row">
+        <div class="col col-lg-2 col-md-3">
+            <div class="custom-grid">Div 1</div>
+        </div>
+        <div class="col col-lg-7 col-md-3">
+            <div class="custom-grid">Div 1</div>
+        </div>
+        <div class="col col-lg-3 col-md-6">
+            <div class="custom-grid">Div 3</div>
+        </div>
+    </div>
+
+    <!-- Contents inside body -->
+    <div class="container">
+        <ul class="ms-2 mb-3 nav nav-pills nav-stacked breadcrumb">
+            <!-- Form -->
+            <li class="active">Form<badge class="badge bg-success">1</badge>
+            </li>
+            <div class="container form-inline bg-success border form-control">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label class="">Name</label>
+                        <input class="form-control" type="text" name="username" value="Its a name bar"
+                            placeholder="Enter your name" />
+                    </div>
+                    <div class="form-group pt-2">
+                        <label class="">department</label>
+                        <input class="form-control" type="text" name="department" value="Its a department bar"
+                            placeholder="Enter your name" />
+                    </div>
+                    <button class="btn btn-primary mt-3" type="submit" name="submit" value="Submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <!-- Form -->
+            <!-- Breadcrump Ex -->
+            <li>
+                <h1></h1>
+                <h2>Breadcrump</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" ><a href="#">First</a></li>
+                        <li class="breadcrumb-item "><a href="#">Second</a></li>
+                        <li class="breadcrumb-item" ><a href="#">Third</a></li>
+                        <li class="breadcrumb-item active" ><a href="#">Fourth</a></li>
+                    </ol>
+                </nav>
+            </li>
+            <li>
+                <h2>Button Group</h2>
+                <div class="btn btn-group btn-bd-accent btn-group-sm">
+                    <button class="btn btn-group btn-dark">Small Button 1</button>
+                    <button class="btn btn-group btn-dark">Small Button 2</button>
+                    <button class="btn btn-group btn-dark">Small Button 3</button>
+                </div>
+                <div class="btn btn-group  btn-info">
+                    <button class="btn btn-group btn-dark">Button 1</button>
+                    <button class="btn btn-group ">Button 2</button>
+                    <button class="btn btn-group btn-dark">Button 3</button>
+                </div>
+                <div class="btn btn-group btn-bd-accent">
+                    <button class="btn btn-group btn-dark">Button 1</button>
+                    <button class="btn btn-group btn-dark">Button 2</button>
+                    <button class="btn btn-group btn-dark">Button 3</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

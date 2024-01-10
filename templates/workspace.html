@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script type="text/javascript" src="{{ url_for('static', filename= 'index.js') }}" defer></script>
+    <title>Workspace</title>
+    <style>
+        .workspace-nav{
+          overflow-x: hidden;
+          width: 350px;
+          height: 100%;
+          position: fixed;
+          background-color: rgb(255, 0, 106);
+        }
+        .workspace-layout{
+            height: 100%;
+            margin-left: 120px;
+            padding: 0px 10px;
+            background-color: #1f1515;
+        }
+    </style>
+</head>
+<body>
+  <div class="workspace-nav">
+      <ul class="nav nav-pills nav-justified nav-expand-lg">
+          <li class="nav nav-item" aria-current="navpill">Testdb1</li>
+          <li class="nav nav-item">Testdb1</li>
+          <li class="nav nav-item">Testdb1</li>
+          <li class="nav nav-item">Testdb1</li>
+      </ul>
+  </div>
+  <div class="workspace-layout">k</div>
+</body>
+<!-- <body>
+    <div class="d-flex align-items-start workspace-nav">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+          <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" >Disabled</button>
+          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" disabled >Settings</button>
+        </div>
+    </div>
+        <div class="workspace-layout">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0"><div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+            <div class="progress-bar" style="width: 25%"></div>
+          </div>
+          <div class="progress mt-3" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+            <div class="progress-bar" style="width: 25%"></div>
+          </div>
+        </div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="1">It is tab 2</div>
+          <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="2">...</div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+        </div>
+    </div>
+</body> -->
+</html>
